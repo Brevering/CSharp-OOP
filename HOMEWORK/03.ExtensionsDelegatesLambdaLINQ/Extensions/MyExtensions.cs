@@ -38,7 +38,7 @@
         public static decimal ProductExtension<T>(this IEnumerable<T> collection) where T : IConvertible
         {
             var decCollection = collection.Select(x => Convert.ToDecimal(x));
-            decimal result = 0;
+            decimal result = 1;
             foreach (var item in decCollection)
             {
                 result *= item;
